@@ -1,4 +1,6 @@
 streamlit
 openai
-langchain
-langchain-community
+llama-index
+llama-index-llms-openai
+nltk
+pypdf
