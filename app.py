@@ -3,9 +3,9 @@ import openai
 from llama_index.llms.openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 
-st.set_page_config(page_title="Chat with the Streamlit docs, powered by LlamaIndex", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="Chat with the Streamlit docs", page_icon="🦙 powered", layout="centered", initial_sidebar_state="auto", menu_items=None)
 openai.api_key = st.secrets["auth_key"]
-st.title("Chat with the Streamlit docs, powered by LlamaIndex 💬🦙")
+#st.title("Chat with the Streamlit docs, powered by LlamaIndex 💬🦙")
 
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
     st.session_state.messages = [
