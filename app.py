@@ -10,7 +10,7 @@ openai.api_key = st.secrets['auth_key']
 #openai_api_key = st.sidebar.text_input('OpenAI API Key')
 #openai_model = st.sidebar.selectbox('AI model', ('gpt-3.5-turbo', 'gpt-4o-mini'),)
 #openai_temp = st.sidebar.slider('Temperature', min_value=0.1, max_value=0.8, value=0.2)
-openai_prompt = st.sidebar.text_input('OpanAI Prompt', """You are an expert on 
+openai_prompt = st.sidebar.text_input('OpenAI Prompt', """You are an expert on 
             the Streamlit Python library and your 
             job is to answer technical questions. 
             Assume that all questions are related 
