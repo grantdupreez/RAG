@@ -7,7 +7,7 @@ st.title('RAG Chat App')
 openai_api_key = st.sidebar.text_input('OpenAI API Key')
 openai_model = st.sidebar.selectbox('AI model', ('gpt-3.5-turbo', 'gpt-4o-mini'),)
 openai_temp = st.sidebar.slider('Temperature', min_value=0.2, max_value=0.7, value=0.2)
-openai_prompt = st.sidebar.text_input('')
+openai_prompt = st.sidebar.text_input('OpenAI prompt')
 
 def generate_response(input_text):
   llm = OpenAI(openai_temp, openai_api_key=openai_api_key)
