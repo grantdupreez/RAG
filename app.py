@@ -30,7 +30,7 @@ def load_data():
         temperature=0.2,
         system_prompt=openai_prompt,
     )
-    input_container = st.container(height=300, border=True)
+    input_container = st.container(height=68, border=True)
     input_container.write("Input data:")
     input_container.write(docs)
       
