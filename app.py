@@ -33,7 +33,7 @@ def load_data():
 #    input_container = st.container(height=68, border=True)
 #    input_container.write("Input data:")
 #    input_container.write(docs)
-    with st.expander("Input data (raw), expanded=False"):
+    with st.expander("Input data (raw)", expanded=False):
       st.write(docs)
         
     index = VectorStoreIndex.from_documents(docs)
