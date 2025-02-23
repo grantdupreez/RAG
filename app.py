@@ -31,7 +31,6 @@ def load_data():
         system_prompt=openai_prompt,
     )
     index = VectorStoreIndex.from_documents(docs)
-    st.sidebar.text_area("Scanned data", index, height=204)
     return index
 
 index = load_data()
