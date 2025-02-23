@@ -31,7 +31,7 @@ def load_data():
         system_prompt=openai_prompt,
     )
     input_container = st.container(height=300, border=True)
-      input_container.write("Input data: ", docs)
+    input_container.write("Input data: ", docs)
       
     index = VectorStoreIndex.from_documents(docs)
     return index
