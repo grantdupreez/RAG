@@ -1,1 +1,48 @@
+Risks of implementing an ERP system
+There are eight major risks associated with implementing an ERP system. These are:
+Lack of Management Support
+Insufficient Project Management
+Overly Optimistic Scheduling
+Difficulty Finding Experienced ERP Talent
+Neglecting To Prepare and Train Employees
+A Poorly Managed Integration
+Poor Data Quality
+The Inability to Rework Processes
+By mapping these most common and significant risks and addressing them before implementation begins, organisations can ensure a smoother integration and an ERP system that delivers on its promise of greater accuracy and efficiency.
+Risk #1 Lack of Management Support
+If management isn’t wholeheartedly on board, it will be difficult to win over other employees. Some workers may assume that if management isn’t behind the project, it isn’t truly important to the organisation or their careers. They’re more apt to resist taking the time to learn and adapt to the new system.
+Management support also is critical to gaining the resources, including funding and employee time, essential to a successful ERP implementation. Without these resources, it becomes more likely the project will miss its schedule, budget, or fail to deliver on its goals.
+Risk #2:  Insufficient Project Management
+ERP implementations involve many (if not all) departments across an organisation. They impact numerous processes, and often require multiple system and data integrations. Managing a project of this scope demands dedicated, qualified resources. Skimping on project management, or simply assigning the initiative to employees who are available, increases the likelihood that the project runs over budget or behind schedule. More importantly, it increases the risk that the ERP system fails to provide the benefits that are driving the implementation in the first place.
+Risk #3: Overly Optimistic Scheduling
+While it’s critical to involve multiple stakeholders, it’s also important to recognise that the business must continue as usual with all stakeholders hitting their existing targets. The schedule needs to reflect this reality and consider the hours which each team member can allocate to the project.
+The schedule also should recognise that few projects of this size and complexity proceed absolutely smoothly. Instead, most encounter at least a few roadblocks, like difficulty assembling all the information that will be integrated into the system. Rather than assume all phases of the implementation will proceed without encountering any obstacles, allow for contingencies.
+Risk #4: Difficulty Finding Experienced ERP Talent
+Experienced, knowledgeable experts in ERP implementations and operations are in high demand. Attracting and retaining the experienced ERP professionals who can ensure implementation success requires investment, and businesses should budget and plan accordingly. Think about the different types of talent you may need at different stages, such as specialist contractors at the start and employees further along in the project.
+Risk #5: Neglecting To Prepare and Train Employees
+Change management is key to the success of any major systems implementation, and particularly one that can impact as many roles as an ERP solution. Employees who weren’t involved in the decision to implement the system may not understand how it will benefit the organisation. Many may feel the old ways worked better; some employees may view a new system as an implied criticism of the ways in which they’d been doing their jobs. Some will worry about their ability to learn the system. If left unaddressed, these concerns will lead to behaviours that delay the implementation of the system and potentially undercut the benefits it can offer.
+Risk #6: A Poorly Managed Integration
+ERP software brings together multiple other information systems. Ensuring the clean, accurate integration of these systems is critical to the ability of the solution to successfully automate processes and provide accurate, timely data.
+Risk #7: Poor Data Quality
+In many organisations, the data that will eventually feed into the ERP system contains inaccuracies and duplicates. For example, the same data may be stored in multiple systems, but with slight variations in spelling or format. Some data may be outdated and no longer accurate. For the ERP system to provide a single version of the truth that can inform decision-making, the data populating it needs to be accurate, timely, and truthful. That can require a thorough cleanse.
+Risk #8: The Inability to Rework Processes
+Optimising the benefits of an ERP system often requires rethinking existing business processes. If your organisation simply continues its existing approach to operations, its performance probably will remain the same. If the decision is made to customise the ERP solution to fit existing processes, you’ll likely add cost and time to the implementation schedule, without seeing the boost in performance you’re looking for.
+However, it’s not unusual to find some employees and managers resisting efforts to change. They may take pride in their knowledge of the existing processes. Some may reason that the systems did work (even if poorly), so why change, especially when accommodating the changes not only will require time and effort, but it may be seen as an implied criticism of the work they’ve been doing.
+More ERP risk management tips
+While ERP implementation risks are real, your organisation can take steps to mitigate them and minimise their impact. They include:
+Tip #1: Identify the reason for implementing the ERP solution
+If you don’t know why you’re implementing the solution, it will be difficult to identify the ERP solution that’s best for your organisation. Moreover, once implemented, you’ll be less likely to know if the system is helping your organisation reach its goals, simply because you haven’t articulated them. Identifying and communicating the rationale for the system can also help convince management and employees of the benefits of the project.
+Once the implementation is underway, a clear sense of the goal can act as a safeguard against change requests that add costs and time, but don’t help the company achieve its goals.
+Tip #2: Gain management support
+This is essential to ensuring the project receives the resources it requires and removing potential organisational obstacles. Key to gaining management support is highlighting how an ERP solution can inform business decisions, automate processes, drive growth, and help the organisation move toward its goals. Outlining the risks of not implementing a system, such as stagnation and the potential loss of competitive advantages, can also help build support.
+Developing a budget and schedule that recognises and plans for potential obstacles builds credibility. These also can act as roadmaps to keep the project on track, should obstacles occur.
+Tip #3: Get early employee buy-in
+Ask employees what they’d like to gain from the system, and then keep them abreast of changes as the implementation proceeds. Let them know how their roles will change and assure them they’ll receive training on the changes (and of course, then you need to follow through on this promise.) These steps increase the likelihood they’ll accept the system.
+Tip #4: Prepare the Organisation for the Change
+Resistance to change is the leading barrier to ERP implementations, Deloitte notes. Tackle it by helping business units understand how jobs will change and preparing employees with appropriate training and communication. Allow enough time for training that employees can get up to speed without unduly compromising the implementation or operations. Decide on a date for turning off the old system. The deadline should allow time to ensure the new solution is operating reliably, but it shouldn’t be so long that employees assume they can use the old system indefinitely.
+Tip #5: Recognise an ERP system is a business solution, and not just an IT project
+While the IT department will, of course, be involved in the implementation and operation of the ERP software, the goal of the system is to drive business results. Moreover, the system will impact most areas of the business. To the extent that’s reasonable, the business units need to participate in the ERP selection, implementation, and operation.
+Tip #6 Plan for the System’s Post-Implementation Operation
+Some say ERP implementations are journeys, rather than destinations. To increase the likelihood the solution meets its goals, it’s important to plan for post-implementation training, communication, and support.
+As many companies grow, they need to shift from homegrown information systems and spreadsheets to ERP solutions. If they don’t, bottlenecks in their systems and the lack of visibility to operations across their enterprise will impede their success and growth.
 
