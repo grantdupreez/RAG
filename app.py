@@ -30,6 +30,7 @@ def load_data():
         temperature=0.2,
         system_prompt=openai_prompt,
     )
+    st.write("Read data: ", docs)
     index = VectorStoreIndex.from_documents(docs)
     return index
 
