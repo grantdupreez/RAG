@@ -4,7 +4,7 @@ from llama_index.llms.openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 
 st.set_page_config(page_title="RAG Chat App")
-st.title('RAG Chat App')
+st.title('Retrieval Augmented Generation Chat App')
 
 openai.api_key = st.secrets['auth_key']
 #openai_api_key = st.sidebar.text_input('OpenAI API Key')
