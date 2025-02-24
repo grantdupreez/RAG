@@ -6,34 +6,43 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 import hmac
 import streamlit as st
 
-
 def check_password():
-    """Returns `True` if the user had the correct password."""
+    """Returns `True` if the user had a correct password."""
+
+    def login_form():
+        """Form with widgets to collect user information"""
+        with st.form("Credentials"):
+            st.text_input("Username", key="username")
+            st.text_input("Password", type="password", key="password")
+            st.form_submit_button("Log in", on_click=password_entered)
 
     def password_entered():
         """Checks whether a password entered by the user is correct."""
-        if hmac.compare_digest(st.session_state["password"], st.secrets["password"]):
+        if st.session_state["username"] in st.secrets[
+            "passwords"
+        ] and hmac.compare_digest(
+            st.session_state["password"],
+            st.secrets.passwords[st.session_state["username"]],
+        ):
             st.session_state["password_correct"] = True
-            del st.session_state["password"]  # Don't store the password.
+            del st.session_state["password"]  # Don't store the username or password.
+            del st.session_state["username"]
         else:
             st.session_state["password_correct"] = False
 
-    # Return True if the password is validated.
+    # Return True if the username + password is validated.
     if st.session_state.get("password_correct", False):
         return True
 
-    # Show input for password.
-    st.text_input(
-        "Password", type="password", on_change=password_entered, key="password"
-    )
+    # Show inputs for username + password.
+    login_form()
     if "password_correct" in st.session_state:
-        st.error("😕 Password incorrect")
+        st.error("😕 User not known or password incorrect")
     return False
 
 if not check_password():
-    st.stop()  # Do not continue if check_password is not True.
-
-
+    st.stop()
+    
 
 st.set_page_config(page_title="RAG Chat App")
 st.title('Retrieval Augmented Generation Chat App')
