@@ -3,13 +3,42 @@ import openai
 from llama_index.llms.openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 
+import hmac
+import streamlit as st
+
+
+def check_password():
+    """Returns `True` if the user had the correct password."""
+
+    def password_entered():
+        """Checks whether a password entered by the user is correct."""
+        if hmac.compare_digest(st.session_state["password"], st.secrets["password"]):
+            st.session_state["password_correct"] = True
+            del st.session_state["password"]  # Don't store the password.
+        else:
+            st.session_state["password_correct"] = False
+
+    # Return True if the password is validated.
+    if st.session_state.get("password_correct", False):
+        return True
+
+    # Show input for password.
+    st.text_input(
+        "Password", type="password", on_change=password_entered, key="password"
+    )
+    if "password_correct" in st.session_state:
+        st.error("😕 Password incorrect")
+    return False
+
+if not check_password():
+    st.stop()  # Do not continue if check_password is not True.
+
+
+
 st.set_page_config(page_title="RAG Chat App")
 st.title('Retrieval Augmented Generation Chat App')
 
 openai.api_key = st.secrets['auth_key']
-#openai_api_key = st.sidebar.text_input('OpenAI API Key')
-#openai_model = st.sidebar.selectbox('AI model', ('gpt-3.5-turbo', 'gpt-4o-mini'),)
-#openai_temp = st.sidebar.slider('Temperature', min_value=0.1, max_value=0.8, value=0.2)
 openai_prompt = st.sidebar.text_area('OpenAI Prompt', """You are an expert on ERP Project Management and project risk management. Assume that all questions are related to managing projects. Keep your answers technical and based on facts – do not hallucinate features.""", 
                                      height=204)
 
@@ -30,9 +59,6 @@ def load_data():
         temperature=0.2,
         system_prompt=openai_prompt,
     )
-#    input_container = st.container(height=68, border=True)
-#    input_container.write("Input data:")
-#    input_container.write(docs)
     with st.expander("Input data (raw)", expanded=False):
       st.write(docs)
         
