@@ -45,7 +45,7 @@ if not check_password():
     
 
 st.set_page_config(page_title="RAG Chat App")
-st.title('Retrieval Augmented Generation Chat App')
+st.title('Retrieval Augmented Generation Chat')
 
 openai.api_key = st.secrets['auth_key']
 openai_prompt = st.sidebar.text_area('OpenAI Prompt', """You are an expert on ERP Project Management and project risk management. Assume that all questions are related to managing projects. Keep your answers technical and based on facts – do not hallucinate features.""", 
