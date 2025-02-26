@@ -1,15 +1,9 @@
 import streamlit as st
 import openai
-#from llama_index.llms.openai import OpenAI
-#from llama_index.core import Settings, SimpleDirectoryReader 
-#from llama_index.core.indices.vector_store.base import VectorStoreIndex
-from llama_index.core import VectorStoreIndex, ServiceContext, Settings
 from llama_index.llms.openai import OpenAI
-from llama_index.core import SimpleDirectoryReader
-from nltk.corpus import stopwords
-
+from llama_index.core import Settings, SimpleDirectoryReader 
+from llama_index.core.indices.vector_store.base import VectorStoreIndex
 import hmac
-import streamlit as st
 
 def check_password():
     """Returns `True` if the user had a correct password."""
