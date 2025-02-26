@@ -6,6 +6,7 @@ import openai
 from llama_index.core import VectorStoreIndex, ServiceContext, Settings
 from llama_index.llms.openai import OpenAI
 from llama_index.core import SimpleDirectoryReader
+from nltk.corpus import stopwords
 
 import hmac
 import streamlit as st
