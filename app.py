@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 from llama_index.llms.openai import OpenAI
 #from llama_index.core import Settings, SimpleDirectoryReader 
-from llama_index.core.indices.vector_store.base import VectorStoreIndex
+#from llama_index.core.indices.vector_store.base import VectorStoreIndex
 import hmac
 
 def check_password():
