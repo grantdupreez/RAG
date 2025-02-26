@@ -1,8 +1,8 @@
 import streamlit as st
 import openai
-#from llama_index.llms.openai import OpenAI
+from llama_index.llms.openai import OpenAI
 from llama_index.core import Settings, SimpleDirectoryReader 
-#from llama_index.core.indices.vector_store.base import VectorStoreIndex
+from llama_index.core.indices.vector_store.base import VectorStoreIndex
 import hmac
 
 def check_password():
@@ -64,7 +64,7 @@ def load_data():
     docs = reader.load_data()
     Settings.llm = OpenAI(
         model="gpt-3.5-turbo",
-        temperature=0.2,
+        temperature=0.5,
         system_prompt=openai_prompt,
     )
     with st.expander("Input data (raw)", expanded=False):
