@@ -65,7 +65,7 @@ def load_data():
     docs = reader.load_data()
     Settings.llm = OpenAI(
         model="gpt-3.5-turbo",
-        temperature=0.2,
+        temperature=0.5,
         system_prompt=openai_prompt,
     )
     with st.expander("Input data (raw)", expanded=False):
